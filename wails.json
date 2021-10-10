@@ -1,0 +1,9 @@
+{
+  "name": "YoutubeShufflerGO",
+  "outputfilename": "YoutubeShufflerGO",
+  "assetdir": "frontend/src",
+  "author": {
+    "name": "Timm Ortloff",
+    "email": "me@tortloff.de"
+  }
+}
