@@ -10,7 +10,7 @@ import (
 	"github.com/wailsapp/wails/v2/pkg/options/windows"
 )
 
-//go:embed frontend/src
+//go:embed frontend/dist/frontend
 var assets embed.FS
 
 func main() {
@@ -22,10 +22,6 @@ func main() {
 		Title:             "YoutubeShufflerGO",
 		Width:             720,
 		Height:            570,
-		MinWidth:          720,
-		MinHeight:         570,
-		MaxWidth:          1280,
-		MaxHeight:         740,
 		DisableResize:     false,
 		Fullscreen:        false,
 		Frameless:         false,
