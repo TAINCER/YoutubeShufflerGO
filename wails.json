@@ -2,7 +2,7 @@
   "name": "YoutubeShufflerGO",
   "assetdir": "frontend/dist/frontend",
   "frontend:build": "",
-  "frontend:install": "pnpm install",
+  "frontend:install": "npm install",
   "frontend:dev": "npm run watch",
   "wailsjsdir": "./frontend",
   "version": "2",
