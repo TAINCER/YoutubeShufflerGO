@@ -1,9 +1,20 @@
 {
   "name": "YoutubeShufflerGO",
-  "outputfilename": "YoutubeShufflerGO",
-  "assetdir": "frontend/src",
-  "author": {
+  "assetdir": "frontend/dist/frontend",
+  "frontend:build": "",
+  "frontend:install": "pnpm install",
+  "frontend:dev": "npm run watch",
+  "wailsjsdir": "./frontend",
+  "version": "2",
+  "Path": "",
+  "BuildDir": "",
+  "outputfilename": "YoutubeShufflerGO.exe",
+  "OutputType": "",
+  "Platform": "",
+  "Author": {
     "name": "Timm Ortloff",
     "email": "me@tortloff.de"
-  }
+  },
+  "debounceMS": 100,
+  "devserverurl": "http://localhost:34115"
 }
