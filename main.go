@@ -14,15 +14,17 @@ import (
 var assets embed.FS
 
 func main() {
-	// Create an instance of the app structure
-	app := NewApp()
+	db := NewDB("C:\\Users\\Timm\\AppData\\Roaming\\YoutubeShufflerGO\\db.json")
+	db.Init()
+	bookmarkParser := NewBookmarkParser(db)
+	app := NewApp(bookmarkParser)
+	defer db.Close()
 
-	// Create application with options
 	err := wails.Run(&options.App{
 		Title:             "YoutubeShufflerGO",
 		Width:             880,
 		Height:            450,
-		DisableResize:     true,
+		DisableResize:     false,
 		Fullscreen:        false,
 		Frameless:         true,
 		StartHidden:       false,
@@ -35,6 +37,7 @@ func main() {
 		OnShutdown:        app.shutdown,
 		Bind: []interface{}{
 			app,
+			bookmarkParser,
 		},
 		// Windows platform specific options
 		Windows: &windows.Options{
