@@ -20,11 +20,11 @@ func main() {
 	// Create application with options
 	err := wails.Run(&options.App{
 		Title:             "YoutubeShufflerGO",
-		Width:             720,
-		Height:            570,
-		DisableResize:     false,
+		Width:             880,
+		Height:            450,
+		DisableResize:     true,
 		Fullscreen:        false,
-		Frameless:         false,
+		Frameless:         true,
 		StartHidden:       false,
 		HideWindowOnClose: false,
 		RGBA:              &options.RGBA{R: 255, G: 255, B: 255, A: 255},
