@@ -6,18 +6,20 @@ import (
 
 // App struct
 type App struct {
-	ctx context.Context
+	ctx            context.Context
+	bookmarkParser *BookmarkParser
 }
 
 // NewApp creates a new App application struct
-func NewApp() *App {
-	return &App{}
+func NewApp(bookmarkParser *BookmarkParser) *App {
+	return &App{bookmarkParser: bookmarkParser}
 }
 
 // startup is called at application startup
 func (b *App) startup(ctx context.Context) {
 	// Perform your setup here
 	b.ctx = ctx
+	b.bookmarkParser.ctx = ctx
 }
 
 // domReady is called after the front-end dom has been loaded
