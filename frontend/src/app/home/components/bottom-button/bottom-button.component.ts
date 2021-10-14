@@ -12,4 +12,8 @@ export class BottomButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nextVideoClick(event): void {
+
+  }
+
 }
