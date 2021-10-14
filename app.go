@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 )
 
 // App struct
@@ -29,9 +28,4 @@ func (b App) domReady(ctx context.Context) {
 // shutdown is called at application termination
 func (b *App) shutdown(ctx context.Context) {
 	// Perform your teardown here
-}
-
-// Greet returns a greeting for the given name
-func (b *App) Greet(name string) string {
-	return fmt.Sprintf("Hello %s, It's show time!", name)
 }
