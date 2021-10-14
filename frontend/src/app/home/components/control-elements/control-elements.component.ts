@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlElementsComponent implements OnInit {
 
+  public video = '-';
+  public videoUrl = '';
+
+  public loop = false;
+  public autoplay = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  open(): void {
+
+  }
+
+  updatePlayerConfig(): void {
+
+  }
 }
