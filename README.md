@@ -1,15 +1,9 @@
-# README
+A Go/TS rewrite of my YoutubeShufflerTS, which is a rewrite of my YoutubeShufflerCS.
 
-## About
+This is primarly a tool I made for myself to play Music from YouTube, which I save in my bookmarks. (Chrome)
 
-This template uses vanilla JS / HTML and CSS.
-
-## Live Development
-
-To run in live development mode, run `wails dev` in the project directory. The frontend dev server will run
-on http://localhost:34115. Open this in your browser to connect to your application.
-
-## Building
-
-For a production build, use `wails build`.
-
+This Repo uses:
+ - [Wails](https://wails.io)
+ - [Angular](https://angular.io)
+ - [TypeScript](https://www.typescriptlang.org)
+ - [SCSS](https://sass-lang.com)
