@@ -4,6 +4,7 @@ This is primarly a tool I made for myself to play Music from YouTube, which I sa
 
 This Repo uses:
  - [Wails](https://wails.io)
+ - [Go](https://golang.org)
  - [Angular](https://angular.io)
  - [TypeScript](https://www.typescriptlang.org)
  - [SCSS](https://sass-lang.com)
